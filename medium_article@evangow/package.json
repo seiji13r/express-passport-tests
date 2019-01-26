@@ -1,0 +1,17 @@
+{
+  "name": "expressjs-tests",
+  "version": "1.0.0",
+  "description": "# Step by Step ## Initialize Project ``` npm init -y ``` ## Install Packages npm i --save express",
+  "main": "server-01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "uuid": "^3.3.2"
+  }
+}
