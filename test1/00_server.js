@@ -15,8 +15,14 @@ app.use(express.static("public"));
 
 // *********  ROUTES  *************
 app.get("/", (req, res) => {
+  
   const client_ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
-  res.send(`Hello World! You have the Following IP Address: [${client_ip}]`);
+  const sessionID = req.sessionID;
+
+  res.send(
+    `Hello World! You have the Following IP Address: [${client_ip}] SessionID:[${sessionID}]`
+  );
+
 });
 
 // Initialize thw Server
