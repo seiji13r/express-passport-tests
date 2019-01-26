@@ -28,7 +28,8 @@ app.use(session({
     console.log(req.sessionID);
     return uuid(); // use UUIDs for session IDs require("uuid/v4")
   },
-  secret: 'keyboard cat',
+  name: "connect.sid", // Name of the Cookie
+  secret: "shhh this is super super secret", // This is the secret used to sign the session ID cookie.
   resave: false,
   saveUninitialized: true
 }))
