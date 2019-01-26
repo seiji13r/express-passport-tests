@@ -59,7 +59,7 @@ app.get("/", (req, res) => {
 
 });
 
-// Initialize thw Server
+// Initialize the Server
 app.listen(PORT, () => (
   console.log(`Server Listening in Port: ${PORT}, http://localhost:${PORT} 🌎`)
 ));

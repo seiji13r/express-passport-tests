@@ -72,7 +72,7 @@ app.post('/login', (req, res) => {
   res.send(`You posted to the login page!\n`)
 })
 
-// Initialize thw Server
+// Initialize the Server
 app.listen(PORT, () => (
   console.log(`Server Listening in Port: ${PORT}, http://localhost:${PORT} 🌎`)
 ));

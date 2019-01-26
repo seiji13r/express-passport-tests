@@ -116,7 +116,7 @@ app.post('/login', (req, res, next) => {
   })(req, res, next);
 })
 
-// Initialize thw Server
+// Initialize the Server
 app.listen(PORT, () => (
   console.log(`Server Listening in Port: ${PORT}, http://localhost:${PORT} 🌎`)
 ));
