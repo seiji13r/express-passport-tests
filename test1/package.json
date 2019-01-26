@@ -1,0 +1,23 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "Authentication With Passport Express and Sequelize",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "espressjs",
+    "passportjs",
+    "sequelize"
+  ],
+  "author": "Seiji Osada",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "passport": "^0.4.0",
+    "sequelize": "^4.42.0"
+  }
+}
