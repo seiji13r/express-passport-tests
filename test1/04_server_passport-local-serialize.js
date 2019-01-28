@@ -116,6 +116,16 @@ app.post('/login', (req, res, next) => {
   })(req, res, next);
 })
 
+app.get('/authrequired', (req, res) => {
+  console.log('Inside GET /authrequired callback')
+  console.log(`User authenticated? ${req.isAuthenticated()}`)
+  if(req.isAuthenticated()) {
+    res.send('you hit the authentication endpoint\n')
+  } else {
+    res.redirect('/')
+  }
+})
+
 // Initialize the Server
 app.listen(PORT, () => (
   console.log(`Server Listening in Port: ${PORT}, http://localhost:${PORT} 🌎`)
