@@ -47,10 +47,14 @@ app.use(routes);
 
 
 var syncOptions = {
-  force: true
+  force: false
 };
 
-  // Initialize the Server
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+};
+
+// Initialize the Server
 db.sequelize.sync(syncOptions).then(function () {
   app.listen(PORT, () => (
     console.log(`Server Listening in Port: ${PORT}, http://localhost:${PORT} 🌎`)
